@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuan 3</title>
+</head>
+<body>
+    <h1>SELAMAT DATANG DI WEB MAGANG</h1>
+    
+    <div class="pembungkus">
+        <input type="text" class="input biru" id="gmail" placeholder="masukan gmail">
+        <input type="text" class="input" id="sandi" placeholder="masukan sandi">
+        <div>
+            <input id="robot" type="checkbox">
+            <label for="robot">saya bukan robot</label>
+        </div> 
+        <button id="tombolpesan" class="tombol">MASUK </button>
+    </div>
+
+
+<script>
+   var tombol1 = document.getElementById('tombolpesan')
+    tombol1.addEventListener('click', function() {
+        var sandi = document.getElementById('sandi').value
+        var gmail = document.getElementById('gmail').value
+        if (gmail == 'bagasprasetyo' && sandi == 'bagas123') {
+            window.location.href = "file:///C:/Users/bagas/Videos/html%20ferst/pertemuan-2.html"
+        }
+        else {
+            alert("sandi salah periksa sandi")
+        }
+        
+    }) 
+
+
+</script>
+<style>
+    body {
+        background-image: url("3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh
+        
+    }
+    .tombol {
+        color: white;
+        background: black;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 12px;
+    } 
+    h1 {
+        color: black;
+        font-family: 'Times New Roman';
+        text-align: center;
+    }
+    .pembungkus {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 20PX;
+    }
+    .input {
+        padding: 10px;
+    }
+    
+    
+</style>
+</body>
+</html>
